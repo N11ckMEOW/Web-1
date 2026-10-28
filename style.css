@@ -1,0 +1,150 @@
+:root {
+  /* ===== COLORS ===== */
+  --color-primary: #b9ff66;
+  --color-dark: #191a23;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray: #f3f3f3;
+
+  --color-text: var(--color-black);
+  --color-background: var(--color-white);
+
+  /* ===== TYPOGRAPHY ===== */
+  --font-family: "Space Grotesk", sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+
+  --font-size-base: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+
+  --font-size-h1: clamp(2.625rem, 1.8rem + 3.5vw, 3.75rem);
+  --font-size-h2: clamp(2.25rem, 1.9rem + 1.5vw, 2.5rem);
+  --font-size-h3: clamp(1.625rem, 1.45rem + 0.75vw, 1.875rem);
+  --font-size-h4: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+
+  --line-height-base: 1.5;
+  --line-height-heading: 1.2;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* ===== CONTAINER ===== */
+  --container-width: 77.5rem;
+  --container-padding: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* ===== SPACING ===== */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: clamp(1.25rem, 2vw, 2rem);
+  --space-lg: clamp(2rem, 4vw, 3.75rem);
+  --space-xl: clamp(3rem, 6vw, 5rem);
+  --space-2xl: clamp(3.75rem, 8vw, 8.75rem);
+
+  --section-spacing: clamp(3.75rem, 8vw, 8.75rem);
+
+  /* ===== RADIUS ===== */
+  --radius-sm: 0.625rem;
+  --radius-md: 1.25rem;
+  --radius-lg: 2.8125rem;
+  --radius-full: 100vmax;
+
+  /* ===== BORDERS & SHADOWS ===== */
+  --border-default: 1px solid var(--color-dark);
+  --shadow-card: 0 5px 0 var(--color-dark);
+
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url(fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: 'SpaceGrotesk', sans-serif;
+    box-sizing: border-box
+}
+
+header {
+    width: 90%;
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    gap: 15px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.header-menu a {
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+}
+
+.logo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.button1 {
+    border-radius: 14px;
+    width: 231px;
+    height: 68px;
+    background: none;
+    border: 1px solid black
+}
+
+.button2 {
+    border-radius: 14px;
+    width: 264px;
+    height: 68px;
+    border: 1px solid black;
+    color:#fff;
+    font-size: 20px;
+    background-color: #191A23;
+}
+
+.hero {
+    width: 90%;
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text h2 {
+    font-size: 60px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.hero-logo {
+    margin-top: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    filter: grayscale(100%);
+}
